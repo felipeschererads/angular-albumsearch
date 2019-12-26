@@ -1,0 +1,37 @@
+Modules https://medium.com/@cyrilletuzi/understanding-angular-modules-ngmodule-and-their-scopes-81e4ed6f7407
+Router https://www.sitepoint.com/component-routing-angular-router/
+
+Http 
+https://alligator.io/angular/httpclient-intro/
+https://imasters.com.br/apis-microsservicos/consumindo-json-via-http-no-angular-js-4
+https://coryrylan.com/blog/angular-multiple-http-requests-with-rxjs
+
+Fake Api 
+https://jsonplaceholder.typicode.com/posts
+
+Criar componente
+ng g c features/componente --skip-tests=true --dry-run
+
+Angular Material - 
+- https://material.angular.io/
+- https://blog.angular-university.io/angular-material-dialog/
+
+NgRx
+https://medium.com/frontend-fun/angular-ngrx-a-clean-and-clear-introduction-4ed61c89c1fc
+
+Conceitos básicos:
+- Decorators
+- Tipos de Decorators (Injectable, Component, etc)
+- Observables (RxJS)
+- Server side rendering
+
+============================================================
+TODO Adicionar Angular Material - DONE
+TODO Criar Header - DONE
+TODO Criar Album list - DONE
+TODO Criar Album Box - DONE
+TODO Criar User info - DONE
+TODO Criar Photo list - DONE
+TODO Exibir photo em janela modal - DONE
+TODO Criar componente de filtro - DONE
+TODO Filtrar os dados da HOME - Done

@@ -3,9 +3,13 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-albumsearch": {
+    "angular-hackernews": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -13,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-albumsearch",
+            "outputPath": "dist/angular-hackernews",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -63,21 +68,22 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-albumsearch:build"
+            "browserTarget": "angular-hackernews:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-albumsearch:build:production"
+              "browserTarget": "angular-hackernews:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-albumsearch:build"
+            "browserTarget": "angular-hackernews:build"
           }
         }
       }
-    }},
-  "defaultProject": "angular-albumsearch"
+    }
+  },
+  "defaultProject": "angular-hackernews"
 }

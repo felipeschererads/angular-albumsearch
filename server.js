@@ -5,11 +5,11 @@ const app = express();
 const cors = require("cors");
 
 app.use(cors());
-app.use(express.static(`$/dist/$`));
 
-app.get("/*", (req, res) => {
-  //res.sendFile(path.join(`$/dist/$/index.html`));
-  res.sendFile("./dist/angular-hackernews/index.html");
+app.use(express.static(__dirname + "/dist/angular-albumsearch"));
+
+app.get("/*", function(req, res) {
+  res.sendFile(path.join(__dirname + "/dist/angular-albumsearch/index.html"));
 });
 
 app.listen(process.env.PORT || 8080);
